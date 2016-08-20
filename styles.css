@@ -82,8 +82,14 @@ body {
 }
 
 .menu:hover .menu-circle {
-  transform: scale(1.5);
+  animation: beat 0.4s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
+
+@keyframes beat{
+  to { transform: scale(1.5); }
+}
+
 
 .menu.open .menu-circle {
   transform: scale(60);
